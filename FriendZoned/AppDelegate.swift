@@ -16,7 +16,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        presentUI()
+
         return true
+    }
+    
+    func presentUI(){
+        window = UIWindow()
+        
+        let tabBarcontroller = UITabBarController()
+        
+        let layout = UICollectionViewFlowLayout()
+        let rootViewControleler = ViewController(collectionViewLayout: layout)
+        let navController = UINavigationController(rootViewController: rootViewControleler)
+        navController.tabBarItem.image = #imageLiteral(resourceName: "home").withRenderingMode(.alwaysOriginal)
+        
+        let textsCollectionView = TextsCollectionViewController(collectionViewLayout: UICollectionViewFlowLayout())
+        let navController2 = UINavigationController(rootViewController: textsCollectionView)
+        navController2.tabBarItem.image = #imageLiteral(resourceName: "message").withRenderingMode(.alwaysOriginal)
+        navController2.title = "Text"
+        
+        let navController3 = UINavigationController(rootViewController: UIViewController())
+        navController3.tabBarItem.image = #imageLiteral(resourceName: "profile").withRenderingMode(.alwaysOriginal)
+        navController3.title = "me"
+        
+        
+        [navController, navController2, navController3].forEach({
+            $0.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.black], for: .normal)
+        })
+       
+        tabBarcontroller.viewControllers = [navController, navController2, navController3]
+        
+        window?.rootViewController = tabBarcontroller
+        window?.makeKeyAndVisible()
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

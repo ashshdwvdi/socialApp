@@ -27,6 +27,17 @@ class FriendZonedUITests: XCTestCase {
     }
 
     func testExample() {
+        
+        let app = XCUIApplication()
+        let collectionViewsQuery = app.collectionViews
+        collectionViewsQuery/*@START_MENU_TOKEN@*/.cells.containing(.staticText, identifier:"Hyde Chaurasia").children(matching: .other).element(boundBy: 0).swipeRight()/*[[".cells.containing(.image, identifier:\"feed3\").children(matching: .other).element(boundBy: 0)",".swipeUp()",".swipeRight()",".cells.containing(.staticText, identifier:\"@hyde\").children(matching: .other).element(boundBy: 0)",".cells.containing(.staticText, identifier:\"Hyde Chaurasia\").children(matching: .other).element(boundBy: 0)"],[[[-1,4,1],[-1,3,1],[-1,0,1]],[[-1,2],[-1,1]]],[0,0]]@END_MENU_TOKEN@*/
+        
+        let homeNavigationBar = app.navigationBars["Home"]
+        homeNavigationBar.buttons["Search"].tap()
+        homeNavigationBar.buttons["Share"].tap()
+        app.tabBars.buttons["Home"].tap()
+        collectionViewsQuery/*@START_MENU_TOKEN@*/.cells.containing(.image, identifier:"u3")/*[[".cells.containing(.staticText, identifier:\"@hyde\")",".cells.containing(.staticText, identifier:\"Hyde Chaurasia\")",".cells.containing(.image, identifier:\"u3\")"],[[[-1,2],[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.buttons["edit"].tap()
+        
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
