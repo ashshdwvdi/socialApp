@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BE4AF15B21B53C5200309E32 /* TextsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4AF15A21B53C5200309E32 /* TextsCollectionViewController.swift */; };
+		BE4AF15D21B557E000309E32 /* UsersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4AF15C21B557E000309E32 /* UsersCollectionViewCell.swift */; };
 		BE9C596621A469B300FE3370 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9C596521A469B300FE3370 /* AppDelegate.swift */; };
 		BE9C596821A469B300FE3370 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9C596721A469B300FE3370 /* ViewController.swift */; };
 		BE9C596D21A469B400FE3370 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9C596C21A469B400FE3370 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		BE4AF15A21B53C5200309E32 /* TextsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextsCollectionViewController.swift; sourceTree = "<group>"; };
+		BE4AF15C21B557E000309E32 /* UsersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersCollectionViewCell.swift; sourceTree = "<group>"; };
 		BE9C596221A469B300FE3370 /* FriendZoned.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendZoned.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9C596521A469B300FE3370 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE9C596721A469B300FE3370 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 			children = (
 				BEC2DE2921A51AC200FA99B6 /* MyFeedCells.swift */,
 				BEBB162521AC1E32007A9051 /* TweetCell.swift */,
+				BE4AF15C21B557E000309E32 /* UsersCollectionViewCell.swift */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				BE9C596821A469B300FE3370 /* ViewController.swift in Sources */,
 				BEBB162621AC1E32007A9051 /* TweetCell.swift in Sources */,
 				BEC2DE2A21A51AC200FA99B6 /* MyFeedCells.swift in Sources */,
+				BE4AF15D21B557E000309E32 /* UsersCollectionViewCell.swift in Sources */,
 				BE9C599721A46BF400FE3370 /* UIView+Anchors.swift in Sources */,
 				BEDE3B7E21A7B4AC00E59E4D /* UsersModel.swift in Sources */,
 				BEDE3B8021A7BBB400E59E4D /* NSString+Size.swift in Sources */,

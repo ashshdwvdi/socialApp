@@ -65,7 +65,7 @@ class MyFeedCell: UICollectionViewCell{
     }
     
     func setupUI(){
-        backgroundColor = .white
+        self.backgroundColor = .white
         self.addSubview(userImageView)
         self.addSubview(headingLabel)
         self.addSubview(userNameLabel)
